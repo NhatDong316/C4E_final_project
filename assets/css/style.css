@@ -108,7 +108,12 @@ label {
     transition: 0.3s;   
 }
 
-input:focus + label{
+input[type="text"]:focus + label, 
+input[type="email"]:focus + label, 
+input[type="password"]:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="email"]:not(:placeholder-shown) + label,
+input[type="password"]:not(:placeholder-shown) + label {
     display: none;
 }
 
@@ -164,8 +169,4 @@ input:focus + label{
     font-size: 0.9rem;
     color: #666;
     cursor: pointer;
-}
-
-.checkbox-field input:focus + label {
-    display: block;
 }
