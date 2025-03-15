@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management - Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="logo-placeholder">
+        <img src="./assets/images/logo.png" alt="logo">
+        <span>AProjectO</span>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="image-placeholder">
+                <img src="./assets/images/illustration.png" alt="illustration">
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <h1>Welcome Back</h1>
+                <form id="loginForm" class="form active">
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" required>
+                        <label for="loginEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginPassword" required>
+                        <label for="loginPassword">Password</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Login</button>
+                    <p class="signup-link">Don't have an account? <a href="#" class="toggle-signup">Sign up for free!</a></p>
+                </form>
+
+                <form id="signupForm" class="form">
+                    <div class="form-group">
+                        <input type="text" id="signupName" required>
+                        <label for="signupName">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signupEmail" required>
+                        <label for="signupEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signupPassword" required>
+                        <label for="signupPassword">Password</label>
+                    </div>
+                    <div class="form-group checkbox-field">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms" class="checkbox-label">Terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                    <p class="login-link">
+                        <a href="#" class="back-to-login">← Back to Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
